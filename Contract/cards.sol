@@ -61,7 +61,7 @@ contract CardsV0 {
 
     function dealCards() public {
         shuffle();
-        for(uint256 i = 0; i<2; i++){
+        for(uint256 i = 0; i<cardId; i++){
             if(i%2==0){
                 Player storage p = players[0];
                 p.cardsInHand[p.numberOfCards] = cards[cardIDs[i]];
