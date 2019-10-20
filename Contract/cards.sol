@@ -60,7 +60,7 @@ contract CardsV0 {
     }
 
     function dealCards() public {
-        //shuffle();
+        shuffle();
         for(uint256 i = 0; i<2; i++){
             if(i%2==0){
                 Player storage p = players[0];
@@ -88,7 +88,6 @@ contract CardsV0 {
     }
   
     function pickCard(uint256 card) public{
-        // TODO : Check if the card belongs to the player
         if(msg.sender == players[0].user){
             c1 = cards[card];
         } else {
@@ -162,9 +161,6 @@ contract CardsV0 {
         }
         noOfCardsPicked = 0;
         noOfRounds++;
-        // if(noOfRounds == cardId/2) {
-        //     pickOverallWinner();
-        // }
         if(turn == players[0].user){
             turn = players[1].user;
         } else {
