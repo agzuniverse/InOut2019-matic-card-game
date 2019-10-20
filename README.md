@@ -4,6 +4,8 @@ A blockchain based card game built on the matic network.
 
 ## Instructions to run
 
+Compile `Contract/cards.sol` using an IDE such as Remix.
+
 Address of deployed contract:
 0x4B8DB512784B303480E5697be0d10946Ca90f332
 
