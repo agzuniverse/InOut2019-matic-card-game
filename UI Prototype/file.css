@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 0.5fr 5fr;
+}
+
+.navbar {
+  background-color: white;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.body {
+  /* height: 90vh; */
+  width: 100vw;
+  /* background-color: goldenrod; */
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  background-color: black;
+  /* background-image: url('./assets/final/space.jpg'); */
+  background-size: cover;
+}
+
+.cardSection {
+  /* grid-area: cardSec; */
+  /* background-color: orange; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.userPic {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 4vw;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#opponentPic {
+  background-image: url("./assets/final/profile1.png");
+}
+#userPic {
+  background-image: url("./assets/final/profile2.jpeg");
+}
+
+.opponent {
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-right: 10vw;
+  /* height: 70%; */
+  cursor: pointer;
+  width: 12vw;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card1 {
+  /* background-color: orangered; */
+}
+
+.user {
+  /* background-color: midnightblue; */
+}
+
+.arena {
+  /* grid-area: Arena; */
+  /* background-color: black; */
+  display: grid;
+  grid-template-rows: 1fr 0.4fr 1fr;
+}
+
+.opponentChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2 {
+  margin: 0;
+}
+.card2 > img {
+  width: 10vw;
+}
+
+.result {
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* attribute */
+.center {
+  /* position: absolute; */
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hideform {
+  display: none;
+}

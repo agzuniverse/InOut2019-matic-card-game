@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./file.css" />
+    <script src="./file.js"></script>
+  </head>
+
+  <body>
+    <!-- attribute -->
+    <div class="center hideform" id="attributePop">
+      <button id="close" style="float: right;" onclick="div_hide()">X</button>
+      <form>
+        Attribute<br />
+        <input type="submit" value="Attack" />
+        <input type="submit" value="Defend" />
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="navbar">
+        <h3>
+          <span style="color: darkcyan;margin-left: 3vw;"
+            >Matic - Card game</span
+          >
+        </h3>
+      </div>
+      <div class="body">
+        <div class="cardSection">
+          <!-- Card section -->
+          <div class="opponent">
+            <div class="userPic" id="opponentPic"></div>
+            <div class="card card1">
+              <img src="./assets/final/opponentCard.png" />
+            </div>
+            <div class="card">
+              <div class="card card1">
+                <img src="./assets/final/opponentCard.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="user">
+            <div class="userPic" id="userPic"></div>
+            <div class="card card1" id="show" onclick="div_show()">
+              <img src="./assets/final/captainAmericaNew.png" />
+            </div>
+            <div class="card">
+              <div class="card card1" id="show" onclick="div_show()">
+                <img src="./assets/final/scarletWitch.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arena -->
+        <div class="arena">
+          <div class="opponentChoice">
+            <div class="card card2">
+              <img src="./assets/final/choosePLayer.png" />
+            </div>
+          </div>
+
+          <div class="result">
+            <h2><span style="color:white">Winner :</span> User1</h2>
+          </div>
+
+          <div class="userChoice">
+            <div class="card card2">
+              <img src="./assets/final/choosePLayer.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
